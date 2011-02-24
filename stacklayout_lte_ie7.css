@@ -1,0 +1,38 @@
+.stack
+{
+    _width:auto;
+}
+.stack,
+.stack1of2,
+.stack1of3,
+.stack2of3,
+.stack1of4,
+.stack3of4,
+.stack1of5,
+.stack2of5,
+.stack3of5,
+.stack4of5,
+.stackAuto
+{
+    display:inline;
+    zoom:1;
+    word-wrap:break-word;
+    margin-right:-1px;
+    _position:relative;
+    _overflow:hidden;
+}
+.stackAuto
+{
+    margin-right:0;
+}
+a,
+.stackContent
+{
+    zoom:1;
+    _position:relative;
+}
+.stackAuto .stackContent
+{
+    display:inline;
+    _left:10px; /* equal to .stackContent margin */
+}

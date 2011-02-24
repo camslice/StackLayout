@@ -1,0 +1,75 @@
+/*
+Stack Layout
+A flexible width, component based CSS layout system
+Copyright 2011 Campbell McGuiness
+*/
+.stack,
+.stack1of2,
+.stack1of3,
+.stack2of3,
+.stack1of4,
+.stack3of4,
+.stack1of5,
+.stack2of5,
+.stack3of5,
+.stack4of5,
+.stackAuto
+{
+    width:100%;
+    font-family:'Courier New',monospace;
+    letter-spacing:-0.65em;
+    text-align:center;
+    display:inline-block;
+    vertical-align:top;
+}
+.stackContent
+{
+    display:block;
+    letter-spacing:normal;
+    text-align:left;
+}
+.stackAuto .stackContent
+{
+    text-align:center;
+}
+.stackAuto
+{
+    width:auto;
+    vertical-align:middle;
+}
+.stack1of2
+{
+    width:50%;
+}
+.stack1of3
+{
+    width:33.334%;
+}
+.stack2of3
+{
+    width:66.667%;
+}
+.stack1of4
+{
+    width:25%;
+}
+.stack3of4
+{
+    width:75%;
+}
+.stack1of5
+{
+    width:20%;
+}
+.stack2of5
+{
+    width:40%;
+}
+.stack3of5
+{
+    width:60%;
+}
+.stack4of5
+{
+    width:80%;
+}
