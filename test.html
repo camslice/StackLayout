@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<![endif]-->
+<html>
+    <head>
+        <title>Stack Layout Test</title>
+        <link rel="stylesheet" media="all" type="text/css" href="stacklayout.css" />
+        <!--[if lte IE 7]>
+        <link rel="stylesheet" media="all" type="text/css" href="stacklayout_lte_ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" media="all" type="text/css" href="test.css" />
+        <script type="text/javascript" src="IEmarginFix.js"></script>
+    </head>
+    <body>
+        <div class="stack">
+            <div class="stackContent">
+                <p><code class="content">.stackContent</code> nodes <strong>always</strong> wrap content. They are block level and therefore are the full width of their parent.</p>
+            </div>
+            <div class="stackContent">
+                <p>The next three nodes are <code class="auto">.stackAuto</code> which applies <code class="css">width:auto</code> to them. If you reduce the window width they will automatically stack vertically:</p>
+            </div>
+            <div class="stackAuto">
+                <div class="stackContent">
+                    <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stackAuto">
+                <div class="stackContent">
+                    <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stackAuto">
+                <div class="stackContent">
+                    <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <a class="stackContent" href="#"><img src="images/sampleImage-100wide.gif" /></a>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackAuto">
+                <p class="stackContent"><img src="images/sampleImage-100wide.gif" /></p>
+            </div>
+            <div class="stackContent">
+                The next two nodes have <code class="css">vertical-align:middle</code> applied to them:
+            </div>
+            <div class="stack1of2">
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of2">
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stackContent">
+                Here are the rest of the available width divisions. You'll see <code class="css">.stack1of6</code> in the CSS but I never use it because 1/6 width nodes are severly affected by the decimal rounding error in some browsers, especially when nested.
+            </div>
+            <div class="stack1of3">
+                <div class="stackContent">
+                    <code>.stack1of3</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of3">
+                <div class="stackContent">
+                    <code>.stack1of3</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of3">
+                <div class="stackContent">
+                    <code>.stack1of3</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of3">
+                <div class="stackContent">
+                    <code>.stack1of3</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack2of3">
+                <div class="stackContent">
+                    <code>.stack2of3</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of2">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <code>.stack1of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack3of4">
+                <div class="stackContent">
+                    <code>.stack3of4</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack2of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack3of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack1of5">
+                <div class="stackContent">
+                    <code>.stack1of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack4of5">
+                <div class="stackContent">
+                    <code>.stack4of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack2of5">
+                <div class="stackContent">
+                    <code>.stack2of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stack3of5">
+                <div class="stackContent">
+                    <code>.stack3of5</code> <code class="content">.stackContent</code>
+                </div>
+            </div>
+            <div class="stackContent">
+                Just to prove the stacks are infitely nestable i've nested the markup from above into smaller divisions:
+            </div>
+            <div class="stack1of2">
+                <div class="stackContent">
+                    <p><code class="content">.stackContent</code> nodes <strong>always</strong> wrap content. They are block level and therefore are the full width of their parent. In this case the parent is the outer wrapper of the entire stack which is also a </p>
+                    <p>The two  nodes below are also <code class="auto">.stackAuto</code> which applies <code class="css">width:auto</code> to them. If you reduce the window width they will automatically stack vertically:</p>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackContent">
+                    The two  nodes below have <code class="css">vertical-align:middle</code> applied to them:
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of2</code> <code class="content">.stackContent</code>
+                    </div>
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of2</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackContent">
+                    Here are the rest of the available width divisions. You'll see <code class="css">.stack1of6</code> in the CSS but I never use it because 1/6 width nodes are severly affected by the decimal rounding error in some browsers, especially when nested.
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of3">
+                    <div class="stackContent">
+                        <code>.stack2of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of4">
+                    <div class="stackContent">
+                        <code>.stack3of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack4of5">
+                    <div class="stackContent">
+                        <code>.stack4of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of5">
+                    <div class="stackContent">
+                        <code>.stack2of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of5">
+                    <div class="stackContent">
+                        <code>.stack3of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <p><code class="content">.stackContent</code> nodes <strong>always</strong> wrap content. They are block level and therefore are the full width of their parent. In this case the parent is the outer wrapper of the entire stack which is also a </p>
+                    <p>The two  nodes below are also <code class="auto">.stackAuto</code> which applies <code class="css">width:auto</code> to them. If you reduce the window width they will automatically stack vertically:</p>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackContent">
+                    The two  nodes below have <code class="css">vertical-align:middle</code> applied to them:
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of2</code> <code class="content">.stackContent</code>
+                    </div>
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of2</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackContent">
+                    Here are the rest of the available width divisions. You'll see <code class="css">.stack1of6</code> in the CSS but I never use it because 1/6 width nodes are severly affected by the decimal rounding error in some browsers, especially when nested.
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of3">
+                    <div class="stackContent">
+                        <code>.stack2of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of4">
+                    <div class="stackContent">
+                        <code>.stack3of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack4of5">
+                    <div class="stackContent">
+                        <code>.stack4of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of5">
+                    <div class="stackContent">
+                        <code>.stack2of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of5">
+                    <div class="stackContent">
+                        <code>.stack3of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+            </div>
+            <div class="stack1of4">
+                <div class="stackContent">
+                    <p><code class="content">.stackContent</code> nodes <strong>always</strong> wrap content. They are block level and therefore are the full width of their parent. In this case the parent is the outer wrapper of the entire stack which is also a </p>
+                    <p>The two  nodes below are also <code class="auto">.stackAuto</code> which applies <code class="css">width:auto</code> to them. If you reduce the window width they will automatically stack vertically:</p>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <div class="stackContent">
+                        <code class="auto">.stackAuto</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackAuto">
+                    <p class="stackContent">
+                        <img src="images/sampleImage-100wide.gif" />
+                    </p>
+                </div>
+                <div class="stackContent">
+                    The two  nodes below have <code class="css">vertical-align:middle</code> applied to them:
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of2</code> <code class="content">.stackContent</code>
+                    </div>
+                <div class="stackContent">
+                    <code>.stack1of2</code> <code class="content">.stackContent</code>
+                </div>
+                </div>
+                <div class="stack1of2">
+                    <div class="stackContent">
+                        <code>.stack1of2</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stackContent">
+                    Here are the rest of the available width divisions. You'll see <code class="css">.stack1of6</code> in the CSS but I never use it because 1/6 width nodes are severly affected by the decimal rounding error in some browsers, especially when nested.
+                </div>
+                <div class="stack1of3">
+                    <div class="stackContent">
+                        <code>.stack1of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of3">
+                    <div class="stackContent">
+                        <code>.stack2of3</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of4">
+                    <div class="stackContent">
+                        <code>.stack1of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of4">
+                    <div class="stackContent">
+                        <code>.stack3of4</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack1of5">
+                    <div class="stackContent">
+                        <code>.stack1of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack4of5">
+                    <div class="stackContent">
+                        <code>.stack4of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack2of5">
+                    <div class="stackContent">
+                        <code>.stack2of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+                <div class="stack3of5">
+                    <div class="stackContent">
+                        <code>.stack3of5</code> <code class="content">.stackContent</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

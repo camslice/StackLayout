@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Semantic Class Names | Stack Layout Mockup 4</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="Keywords" content="" />
+        <meta name="Description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" media="all" type="text/css" href="stacklayout-semantic.css" />
+        <!--[if lte IE 7]>
+        <link rel="stylesheet" media="all" type="text/css" href="stacklayout-semantic_lte_ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" media="all" type="text/css" href="skin_mockup.css" />
+        <link rel="stylesheet" media="handheld, only screen and (max-width: 767px)" type="text/css" href="mockup_mobile.css" />
+    </head>
+    <body id="mockup4">
+        <div id="page" class="stack">
+            <div id="header">
+                <div class="wrapper">
+                    <h1 id="title">Semantic Naming</h1>
+                    <div id="banner">
+                        <img width="1100" src="images/my-banner.png" alt="My Banner" />
+                    </div>
+                    <ul id="nav">
+                        <li><a href="mockup1.html">Basic Mockup</a></li>
+                        <li><a href="mockup2.html">Template Variations</a></li>
+                        <li><a href="mockup3.html">Wrappers and Nesting</a></li>
+                        <li class="active"><a href="mockup4.html">Semantic Class Names</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="wrapper">
+                    <div id="column1">
+                        <div class="stackContent">
+                            <h2>Using Semantic Class Names</h2>
+                            <p>This page demonstrates how easy it is to use semantic class for small areas of your site such as the main nagivation or a thumbnail gallery, or for the entire site as part of your deployment process. All the stack component classes that relate to non-semantic width propoerties have been replaced with arbitrary 'semantic' classes. I have kept the <code>.stackConent</code> class because it consider it to be semantic enough for this purpose. This could, however this could also be replaced in a similar fashion. The relevant classes are then simply added to stacklayout.css and stacklayout_lte_ie7.css. In this case i'm using <a href="stacklayout-semantic.css">stacklayout-semantic.css</a> and <a href="stacklayout-semantic_lte_ie7.css">stacklayout-semantic_lte_ie7.css</a>, in which I have commented out the original stack component class names for reference. It should be noted that the parent <code>.stack</code> component is still required.</p>
+                        </div>
+                        <div class="thisClass">
+                            <div class="stackContent">
+                                <h3>This is a full width <strong>.stackContent</strong> component inside a <strong>.stack1of3</strong> component</h3>
+                                <p>Sample content</p>
+                            </div>
+                            <div class="someClass"> <div class="stackContent">
+                                    <h4>This is <strong>.stack1of2</strong> component</h4>
+                                </div>
+                            </div>
+                            <div class="someClass">
+                                <div class="stackContent">
+                                    <h4>This is <strong>.stack1of2</strong> component</h4>
+                                </div>
+                            </div>
+                            <div class="stackContent">
+                                <h3>Another full width <strong>.stackContent</strong> component</h3>
+                                <p>Even more sample content</p>
+                            </div>
+                            <p class="stackContent">This is a <strong>p.stackContent</strong> component. You can just stack them up like normal block level elements.</p>
+                            <p class="stackContent">This is a <strong>p.stackContent</strong> component. You can just stack them up like normal block level elements.</p>
+                            <p class="stackContent">This is a <strong>p.stackContent</strong> component. You can just stack them up like normal block level elements.</p>
+                        </div>
+                        <div class="thatClass">
+                            <div class="stackContent">
+                                <h3>This is a full width <strong>.stackContent</strong> component inside a <strong>.stack2of3</strong> component</h3>
+                                <p>It has five <strong>.stack1of5</strong> siblings which are <strong>vertical-align:middle</strong>:</p>
+                            </div>
+                            <div class="awesomeClass">
+                                <h5 class="stackContent">.stack1of5 <strong>&lt;h5&gt;</strong></h5>
+                            </div>
+                            <div class="awesomeClass">
+                                <h3 class="stackContent">.stack1of5 <strong>&lt;h3&gt;</strong></h3>
+                            </div>
+                            <div class="awesomeClass">
+                                <h1 class="stackContent">.stack1of5 <strong>&lt;h1&gt;</strong></h1>
+                            </div>
+                            <div class="awesomeClass">
+                                <h3 class="stackContent">.stack1of5 <strong>&lt;h3&gt;</strong></h3>
+                            </div>
+                            <div class="awesomeClass">
+                                <h5 class="stackContent">.stack1of5 <strong>&lt;h5&gt;</strong></h5>
+                            </div>
+                            <div class="anotherClass">
+                                <div class="stackContent">
+                                    <h4>A <strong>.stackContent</strong> component inside a <strong>.stack1of4</strong> component</h4>
+                                    <p>Sample text.</p>
+                                </div>
+                                <div class="stackContent">
+                                    <h4>Another <strong>.stackContent</strong> component</h4>
+                                    <p>Even more sample text.</p>
+                                </div>
+                            </div>
+                            <div id="gallery">
+                                <h4 class="stackContent">A bunch of different sized images, all wrapped in <strong>.stackAuto</strong> components with <strong>vertical-align:middle</strong> 'stack' neatly into rows like text:</h4>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="24" height="24" src="images/sampleIcon-24.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="48" height="48" src="images/sampleIcon-48.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="64" height="64" src="images/sampleIcon-64.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="24" height="24" src="images/sampleIcon-24.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="48" height="48" src="images/sampleIcon-48.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="16" height="16" src="images/sampleIcon-16.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="64" height="64" src="images/sampleIcon-64.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="24" height="24" src="images/sampleIcon-24.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="48" height="48" src="images/sampleIcon-48.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="48" height="48" src="images/sampleIcon-48.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="32" height="32" src="images/sampleIcon-32.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="16" height="16" src="images/sampleIcon-16.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="32" height="32" src="images/sampleIcon-32.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="64" height="64" src="images/sampleIcon-64.gif" /></a>
+                                </div>
+                                <div class="galleryImage">
+                                    <a class="stackContent" href="#"><img width="16" height="16" src="images/sampleIcon-16.gif" /></a>
+                                </div>
+                                <p class="stackContent"><strong>Reduce the screen width to witness their desirable stack behaviour.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="column2">
+                        <div class="stackContent">
+                            <h2>Available sizes</h2>
+                            <p>This column contains a samples of all the different porportional component sizes available.</p>
+                        </div>
+                        <div class="january">
+                            <div class="stackContent"><strong>.stack1of2</strong></div>
+                        </div>
+                        <div class="february">
+                            <div class="stackContent"><strong>.stackAuto</strong> component</div>
+                        </div>
+                        <div class="march">
+                            <div class="stackContent"><strong>.stack2of3</strong></div>
+                        </div>
+                        <div class="april">
+                            <div class="stackContent"><strong>.stack1of3</strong></div>
+                        </div>
+                        <div class="may">
+                            <div class="stackContent"><strong>.stack3of4</strong></div>
+                        </div>
+                        <div class="june">
+                            <div class="stackContent"><strong>.stack1of4</strong></div>
+                        </div>
+                        <div class="july">
+                            <div class="stackContent"><strong>.stack4of5</strong></div>
+                        </div>
+                        <div class="august">
+                            <div class="stackContent"><strong>.stack1of5</strong></div>
+                        </div>
+                        <div class="september">
+                            <div class="stackContent"><strong>.stack3of5</strong></div>
+                        </div>
+                        <div class="october">
+                            <div class="stackContent"><strong>.stack2of5</strong></div>
+                        </div>
+                        <div class="february">
+                            <div class="stackContent">Another <strong>.stackAuto</strong> component</div>
+                        </div>
+                        <div class="stackContent">
+                            <h4>This is a <strong>.stackContent</strong> component containing some good old Lorem Ipsum:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed aliquet, tellus a pulvinar tempus, enim orci ultrices mi, a viverra justo sem a nunc. Aenean in nisl. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi est quam, luctus a, mattis id, ullamcorper eget, magna. Nulla odio. Etiam est.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="wrapper">
+                    <div class="footerItem">
+                        <p class="stackContent">&copy; 2011 Your Name here</p>
+                    </div>
+                    <div class="footerItem">
+                        <a class="stackContent" href="#">License</a>
+                    </div>
+                    <div class="footerItem">
+                        <a id="twitter" class="stackContent" href="#">Follow me on Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
