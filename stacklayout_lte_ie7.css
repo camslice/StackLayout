@@ -1,7 +1,17 @@
-.stack
-{
-    _width:auto;
-}
+/*
+* StackLayout by Campbell McGuiness
+*
+* http://stacklayout.com/
+* http://twitter.com/stacklayout
+* http://www.decalcms.com/
+* http://workingsoftware.com.au/
+*
+* This work is licensed under Creative Commons * Attribution-ShareAlike 3.0 Australia License * http://creativecommons.org/licenses/by-sa/3.0/au/
+*
+* Please retain this credit and let us know if you use StackLayout for inclusion on http://stacklayout.com/who.html
+*
+* cam@workingsoftware.com.au
+*/ 
 .stack,
 .stack1of2,
 .stack1of3,
@@ -29,10 +39,14 @@ a,
 .stackContent
 {
     zoom:1;
-    _position:relative;
+    position:relative;
 }
 .stackAuto .stackContent
 {
     display:inline;
-    _left:10px; /* equal to .stackContent margin */
+    position:static;
+}
+.stackAuto a.stackContent
+{
+    float:left;
 }

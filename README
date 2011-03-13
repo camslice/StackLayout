@@ -1,0 +1,45 @@
+/**
+* StackLayout by Campbell McGuiness
+* This work is licensed under
+* Creative Commons Attribution-ShareAlike 3.0 Australia License
+* http://creativecommons.org/licenses/by-sa/3.0/au/
+*/
+
+StackLayout is a flexible width component based CSS layout
+system. It is proposed as an alternative to the popular 
+grid style layout systems.
+
+StackLayout uses display:inline-block with negative letter spacing
+in a fixed width font (Courier New) in order to achieve a 
+floatless, gridless layout system, the components of which can 
+be nested within each other to produce virtually any layout.
+
+You can find out more about StackLayout and see examples of
+implementation at:
+
+http://stacklayout.com/
+
+------------------------------------------
+You can follow the project on Twitter at:
+http://twitter.com/stacklayout
+
+------------------------------------------
+StackLayout is sponsored by:
+http://www.decalcms.com/
+
+------------------------------------------
+Campbell McGuiness is a member of the team at:
+http://workingsoftware.com.au/
+
+------------------------------------------
+You can contact Campbell via email:
+cam@workingsoftware.com.au
+
+------------------------------------------
+This package contains:
+
+mockups: sample implementation
+README: the file you're currently reading
+stacklayout.css: core StackLayout implementation
+stacklayout_lte_ie7.css: IE specific fixes
+test.html: sample implementation

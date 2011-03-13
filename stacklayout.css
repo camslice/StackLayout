@@ -1,8 +1,18 @@
 /*
-Stack Layout
-A flexible width, component based CSS layout system
-Copyright 2011 Campbell McGuiness
-*/
+* Stack Layout by Campbell McGuiness
+*
+* http://stacklayout.com/
+* http://twitter.com/stacklayout
+* http://www.decalcms.com/
+* http://workingsoftware.com.au/
+*
+* This work is licensed under Creative Commons * Attribution-ShareAlike 3.0 Australia License * http://creativecommons.org/licenses/by-sa/3.0/au/
+*
+* Please retain this credit and let us know if you use StackLayout
+* for inclusion on http://stacklayout.com/who.html
+*
+* cam@workingsoftware.com.au
+*/ 
 .stack,
 .stack1of2,
 .stack1of3,
@@ -15,7 +25,6 @@ Copyright 2011 Campbell McGuiness
 .stack4of5,
 .stackAuto
 {
-    width:100%;
     font-family:'Courier New',monospace;
     letter-spacing:-0.65em;
     text-align:center;
@@ -28,6 +37,14 @@ Copyright 2011 Campbell McGuiness
     letter-spacing:normal;
     text-align:left;
 }
+.stackContent:after
+{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
 .stackAuto .stackContent
 {
     text-align:center;
@@ -35,7 +52,10 @@ Copyright 2011 Campbell McGuiness
 .stackAuto
 {
     width:auto;
-    vertical-align:middle;
+}
+.stack
+{
+    width:100%;
 }
 .stack1of2
 {
