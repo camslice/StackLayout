@@ -1,0 +1,118 @@
+img
+{
+    display:block;
+    border:0;
+    float:left;
+}
+.stackContent:after
+{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.stackContent
+{
+    margin:10px;
+    background:#ccc;
+    padding:10px;
+    border:10px solid #ddd;
+}
+.stackAuto
+{
+    padding:10px 0;
+}
+.stackAuto .stackContent
+{
+    margin:0 10px;
+}
+
+.stack
+{
+    background:blue;
+}
+code
+{
+    font-size:1.3em;
+}
+.stackAuto code
+{
+    color:purple;
+}
+.stackAuto
+{
+    background:purple;
+}
+.stackImage code
+{
+    color:red;
+}
+.stackImage
+{
+    background:red;
+}
+.stack1of2 code
+{
+    color:teal;
+}
+.stack1of2
+{
+    background:teal;
+    vertical-align:middle;
+}
+.stack1of3 code,
+.stack2of3 code
+{
+    color:lime;
+}
+.stack1of3,
+.stack2of3
+{
+    background-color:lime;
+}
+.stack1of4,
+.stack3of4
+{
+    background-color:aqua;
+}
+.stack1of4 code,
+.stack3of4 code
+{
+    color:aqua;
+}
+.stack1of5,
+.stack2of5,
+.stack3of5,
+.stack4of5
+{
+    background-color:orange;
+}
+.stack1of5 code,
+.stack2of5 code,
+.stack3of5 code,
+.stack4of5 code 
+{
+    color:orange;
+}
+code.css
+{
+    color:gray;
+}
+code.layout
+{
+    color:blue;
+}
+code.content
+{
+    color:yellow;
+}
+code.auto
+{
+    color:purple;
+}
+code.image
+{
+    color:red;
+}
+

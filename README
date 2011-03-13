@@ -42,4 +42,5 @@ mockups: sample implementation
 README: the file you're currently reading
 stacklayout.css: core StackLayout implementation
 stacklayout_lte_ie7.css: IE specific fixes
+test.css: css for sample implementation
 test.html: sample implementation
