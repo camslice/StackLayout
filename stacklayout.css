@@ -25,10 +25,10 @@
 .stack4of5,
 .stackAuto
 {
+    display:inline-block;
     font-family:'Courier New',monospace;
     letter-spacing:-0.65em;
     text-align:center;
-    display:inline-block;
     vertical-align:top;
 }
 .stackContent
