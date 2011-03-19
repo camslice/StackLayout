@@ -8,8 +8,7 @@
 *
 * This work is licensed under Creative Commons * Attribution-ShareAlike 3.0 Australia License * http://creativecommons.org/licenses/by-sa/3.0/au/
 *
-* Please retain this credit and let us know if you use StackLayout
-* for inclusion on http://stacklayout.com/who.html
+* Please retain this credit and let us know if you use StackLayout for inclusion on http://stacklayout.com/who.html
 *
 * cam@workingsoftware.com.au
 */ 
@@ -28,6 +27,7 @@
     display:inline-block;
     font-family:'Courier New',monospace;
     letter-spacing:-0.65em;
+    word-spacing:-0.65em;
     text-align:center;
     vertical-align:top;
 }
@@ -35,6 +35,7 @@
 {
     display:block;
     letter-spacing:normal;
+    word-spacing:normal;
     text-align:left;
 }
 .stackContent:after
