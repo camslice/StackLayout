@@ -48,6 +48,7 @@
 {
     font-family:'Courier New',monospace;
     letter-spacing:-0.65em;
+    word-spacing:-0.65em;
     text-align:center;
     display:inline-block;
     vertical-align:top;
@@ -59,6 +60,7 @@ h1#title,
 {
     display:block;
     letter-spacing:normal;
+    word-spacing:normal;
     text-align:left;
 }
 .stackContent:after
