@@ -11,7 +11,20 @@
 * Please retain this credit and let us know if you use StackLayout for inclusion on http://stacklayout.com/who.html
 *
 * cam@workingsoftware.com.au
-*/ 
+*/
+
+html{
+/* fix for IE6 horizontal scrollbars */
+_overflow-x:hidden;
+_overflow-y:scroll;
+}
+
+body {
+/* fix for horizontal scrollbars */
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
 .stack,
 .stack1of2,
 .stack1of3,
