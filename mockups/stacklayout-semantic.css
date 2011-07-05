@@ -73,6 +73,11 @@ h1#title,
 .stack
 {
     width:100%;
+    overflow:hidden;
+}
+.stack .stack
+{
+    overflow:visible;
 }
 /*.stack1of2,*/
 .january
