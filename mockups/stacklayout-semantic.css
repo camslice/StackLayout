@@ -3,6 +3,7 @@
 *
 * http://stacklayout.com/
 * http://twitter.com/stacklayout
+* http://facebook.com/stacklayout
 * http://decalcms.com/
 * http://workingsoftware.com.au/
 *
@@ -11,9 +12,11 @@
 * Please retain this credit and let us know if you use StackLayout for inclusion on http://stacklayout.com/who.html
 *
 * cam@workingsoftware.com.au
-*/
+*/ 
 
-/*.stack,.stack1of2,.stack1of3,.stack2of3,.stack1of4,.stack3of4,.stack1of5,.stack2of5,.stack3of5,.stack4of5,.stackAuto,*/
+.stack, /* parent .stack class required */
+/* comment out un-semantic .stackXofX classes: */
+/*.stack1of2,.stack1of3,.stack2of3,.stack1of4,.stack3of4,.stack1of5,.stack2of5,.stack3of5,.stack4of5,.stackAuto,*/
 /* add semantic class names here: */
 #nav li, #column1, #column2, .thisClass, .thatClass, .someClass, .awesomeClass, .anotherClass, #gallery, .galleryImage, .january, .february, .march, .april, .may, .june, .july, .august, .september, .october, .footerItem
 {
